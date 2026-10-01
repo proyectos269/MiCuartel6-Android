@@ -1,0 +1,17 @@
+workflows:
+  android-debug:
+    name: Mi Cuartel 6 Android
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+
+    scripts:
+      - name: Configurar Android SDK
+        script: |
+          echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/local.properties"
+
+      - name: Compilar APK
+        script: |
+          sh ./gradlew assembleDebug
+
+    artifacts:
+      - app/build/outputs/**/*.apk
