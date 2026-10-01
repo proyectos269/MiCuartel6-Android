@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.MiCuartel6" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="colorPrimary">@color/azul_sexta</item>
+        <item name="android:statusBarColor">@color/azul_sexta</item>
+        <item name="android:navigationBarColor">@color/azul_sexta</item>
+    </style>
+</resources>
